@@ -16,4 +16,8 @@ imagesAnimate.forEach(element => {
             parentElement.classList.add('text-animation');
         }
     });
+
+    
+      
+
 });

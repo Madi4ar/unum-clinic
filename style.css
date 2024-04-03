@@ -9,7 +9,9 @@
     margin: 0 auto;
     border: 1px solid red;
 }
-
+.relative {
+    position: relative;
+}
 .flex {
     display: flex;
 }
@@ -181,3 +183,47 @@
     opacity: 1;
     transition:1s all ease;
 }
+
+.ideal-text p{
+    width: 350px;
+    line-height: 150%;
+    color:#538EFF;
+    margin-left: 8px;
+    font-weight: 300;
+}
+.ideal-text svg {
+    margin-top: 5px;
+}
+
+.animate-link {
+    padding:10.5px 20.5px;
+}
+.link:hover {
+    background:#538EFF;
+    color:white;
+}
+.text-blue {
+    color:#538EFF;
+}
+.block {
+    margin-top: 95px;
+}
+
+.our-mission-text {
+    margin-top: 84px;
+}
+.our-mission-text p {
+    width: 836px;
+    color:white;
+    line-height: 24px;  
+}
+
+.circle {
+    background: #538EFF;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+}
+
