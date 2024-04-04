@@ -9,6 +9,12 @@
   margin: 0 auto;
   /* border: 1px solid red; */
 }
+.text-center {
+  text-align: center;
+}
+.disblock {
+  display: flex !important;
+}
 .relative {
   position: relative;
 }
@@ -57,6 +63,113 @@
 .logo {
   margin-top: 4px;
 }
+.code-verified {
+  display: none;
+}
+
+.pop_up {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(61, 61, 61, 0.5);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: none;
+}
+.resendButton {
+  display: none;
+  margin-bottom: 28px;
+}
+.message-thank {
+  display: none;
+}
+.thank-you-message {
+  width: 440px;
+}
+.popup_in {
+  background: #e5e5e5;
+  width: 560px;
+  height: 459px;
+  border-radius: 34px;
+}
+.popup_in h2 {
+  font-size: 28px;
+}
+.popup_in input:focus {
+  outline-color: #538eff;
+}
+.popup_in input[type="email"] {
+  margin-top: 28px;
+  width: 416px;
+  padding: 12px;
+  outline: #538eff;
+  border: none;
+  font-size: 20px;
+}
+.popup_in input[type="number"] {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  text-align: center;
+  margin-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  margin-top: 28px;
+}
+.popup_in input::placeholder {
+  color: #878787;
+  font-size: 20px;
+}
+.popup_in button {
+  padding: 10.5px 123.5px;
+  width: 440px;
+  border-radius: 60px;
+  margin-top: 16px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 18px;
+}
+.popup_in p {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.social_media {
+  margin-top: 16px;
+}
+.social_media svg {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.social_media svg:hover rect {
+  stroke: #538eff;
+}
+.social_media svg:hover path {
+  fill: #538eff;
+}
+.popup_in span {
+  margin-top: 28px;
+  width: 440px;
+  text-align: center;
+}
+.popup_in a {
+  text-decoration: none;
+}
+.popup_in button[disabled] {
+  background: #b1b1b1;
+  color: #636363;
+  border: 1px solid white;
+}
+.close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
 .header ul li {
   list-style-type: none;
   padding: 4px 12px;
@@ -86,11 +199,36 @@
   color: white;
   border: 2px solid #538eff;
 }
+.banner-desc svg {
+  position: absolute;
+  bottom: -28%;
+  right: 50%;
+}
+
+.last-child {
+  position: absolute;
+  top: -50%;
+  right: 50%;
+}
+.video {
+  border-radius: 34px;
+}
+/* .video video {
+  border-radius: 34px;
+} */
+
 .menu .active a {
   color: white;
 }
+.block1 {
+  backdrop-filter: blur(20px);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
 .block2 {
-  margin-top: 95px;
+  margin-top: 200px;
 }
 .banner-images {
   margin-top: 32px;
@@ -98,12 +236,76 @@
 .banner-text {
   font-size: 40px;
   width: 741px;
+  font-weight: 600;
 }
 .banner-text span {
   color: #538eff;
 }
 .banner-text main {
   margin-top: 10px;
+}
+
+.animation-logo {
+  opacity: 0;
+  animation: logo 3s infinite;
+  animation-timing-function: linear;
+  transition: 0.5s all ease;
+}
+.last-anim {
+  opacity: 0;
+  animation: anim 3s infinite;
+  animation-timing-function: linear;
+  transition: 0.5s all ease;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.line-first,
+.line-second {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s ease forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.line-second {
+  animation-delay: 1s;
 }
 
 .image-animation {
@@ -213,11 +415,12 @@
 }
 
 .our-mission-text p {
-  width: 836px;
+  width: 886px;
   color: white;
   line-height: 24px;
   margin-top: 84px;
   margin-left: 39px;
+  font-size: 22px;
 }
 .our-mission-text svg {
   margin-left: 108px;
@@ -323,19 +526,25 @@
 .client a:hover {
   background: #538eff;
 }
-
+.client span {
+  border-bottom: 1px solid black;
+}
 .client-desc p {
-  width: 285px;
+  width: 350px;
+  line-height: 150%;
   padding-top: 44px;
   padding-bottom: 44px;
 }
 .client-second p {
   margin-left: 30px;
 }
+.block5 {
+  background-color: #eef1f3;
+}
 .block5 img {
   position: absolute;
   right: 0;
-  top: -160%;
+  top: -130%;
   height: 410px;
 }
 
@@ -418,8 +627,10 @@
 .banner-desc a:hover {
   background-color: #538eff;
 }
-.blocks {
-  margin-top: 120px;
+
+.line-animation {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 footer {
@@ -439,6 +650,7 @@ footer .footer-logo {
 }
 .footer-info {
   height: 280px;
+  width: 78%;
 }
 .footer-img img:last-child {
   position: absolute;

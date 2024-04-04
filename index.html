@@ -8,9 +8,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+     </script>
     <title>Unum</title>
 </head>
 <body>
+    <div class="pop_up flex items-center justify-center">
+        <div class="flex flex-col items-center justify-center popup_in relative">
+            <div class="close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_488_3222)">
+                    <path d="M16 14.1146L22.6 7.51465L24.4853 9.39998L17.8853 16L24.4853 22.6L22.6 24.4853L16 17.8853L9.39998 24.4853L7.51465 22.6L14.1146 16L7.51465 9.39998L9.39998 7.51465L16 14.1146Z" fill="#B1B1B1"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_488_3222">
+                    <rect width="32" height="32" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="registrate flex flex-col items-center justify-center">
+            <h2>Стать частью UNUM</h2>
+            <form id="registrationForm" class="flex flex-col items-center justify-center">
+                <input type="email" id="emailInput" placeholder="Введите адрес электронной почты" required>
+                <button>Зарегистрироваться</button>
+            </form>
+            <p>или</p>
+            <div class="flex items-center social_media">
+                <a href="">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5098 13.7751C29.5687 13.2764 29.0835 12.885 28.5938 13.0309C27.7136 13.293 26.8182 13.8477 26.2235 14.5302C25.6541 15.1758 25.1406 16.1267 25.0314 17.1159C24.9798 17.5837 25.4137 17.9585 25.8843 17.8667C26.8439 17.6797 27.7483 17.086 28.3527 16.3682C28.9485 15.6608 29.3957 14.7415 29.5098 13.7751ZM33.6476 28.691C33.9482 28.863 34.077 29.222 33.9533 29.541C33.724 30.1325 33.2963 31.087 32.6166 32.0612C31.6854 33.396 30.7189 34.726 29.1964 34.7535C27.7004 34.7806 27.2194 33.8835 25.509 33.8835C23.7992 33.8835 23.2647 34.726 21.8485 34.7806C20.3789 34.8351 19.2598 33.3371 18.3208 32.0071C16.4022 29.2867 14.9359 24.3196 16.9048 20.9669C17.8828 19.3018 19.6307 18.2475 21.5278 18.2204C22.971 18.1934 24.3331 19.1726 25.2153 19.1726C26.0969 19.1726 27.7522 17.9951 29.4923 18.168C30.1334 18.1942 31.7936 18.3978 33.0776 19.7305C33.3575 20.021 33.3269 20.4853 33.0132 20.7405C32.2927 21.3266 31.1463 22.5636 31.1642 24.511C31.1874 26.9617 32.7963 28.2039 33.6476 28.691Z" fill="#1E1E1E"/>
+                    </svg>
+                </a>
+
+                <a href="">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
+                        <path d="M34.8055 23.0415H34V23H25V27H30.6515C29.827 29.3285 27.6115 31 25 31C21.6865 31 19 28.3135 19 25C19 21.6865 21.6865 19 25 19C26.5295 19 27.921 19.577 28.9805 20.5195L31.809 17.691C30.023 16.0265 27.634 15 25 15C19.4775 15 15 19.4775 15 25C15 30.5225 19.4775 35 25 35C30.5225 35 35 30.5225 35 25C35 24.3295 34.931 23.675 34.8055 23.0415Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.1526 20.3455L19.4381 22.755C20.3271 20.554 22.4801 19 24.9996 19C26.5291 19 27.9206 19.577 28.9801 20.5195L31.8086 17.691C30.0226 16.0265 27.6336 15 24.9996 15C21.1586 15 17.8276 17.1685 16.1526 20.3455Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M24.9984 35C27.5814 35 29.9284 34.0115 31.7029 32.404L28.6079 29.785C27.6039 30.5455 26.3559 31 24.9984 31C22.3974 31 20.1889 29.3415 19.3569 27.027L16.0959 29.5395C17.7509 32.778 21.1119 35 24.9984 35Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M34.8048 23.0001L24.9993 23.0002V27.0002H30.6508C30.2548 28.1187 29.5353 29.0832 28.6073 29.7857L28.6088 29.7847L31.7038 32.4037C31.4848 32.6027 34.9993 30.0002 34.9993 25.0002C34.9993 24.3297 34.9303 23.6336 34.8048 23.0001Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                
+                <a href="">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
+                        <path d="M31 15H28C26.6739 15 25.4021 15.5268 24.4645 16.4645C23.5268 17.4021 23 18.6739 23 20V23H20V27H23V35H27V27H30L31 23H27V20C27 19.7348 27.1054 19.4804 27.2929 19.2929C27.4804 19.1054 27.7348 19 28 19H31V15Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                
+                <a href="">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
+                        <g clip-path="url(#clip0_2235_442)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3839 35.779C31.7059 36.007 32.1209 36.064 32.4909 35.924C32.8609 35.783 33.1329 35.467 33.2149 35.084C34.0839 31 36.1919 20.663 36.9829 16.948C37.0429 16.668 36.9429 16.377 36.7229 16.19C36.5029 16.003 36.1979 15.949 35.9259 16.05C31.7329 17.602 18.8199 22.447 13.5419 24.4C13.2069 24.524 12.9889 24.846 12.9999 25.199C13.0119 25.553 13.2499 25.86 13.5929 25.963C15.9599 26.671 19.0669 27.656 19.0669 27.656C19.0669 27.656 20.5189 32.041 21.2759 34.271C21.3709 34.551 21.5899 34.771 21.8789 34.847C22.1669 34.922 22.4749 34.843 22.6899 34.64C23.9059 33.492 25.7859 31.717 25.7859 31.717C25.7859 31.717 29.3579 34.336 31.3839 35.779ZM20.3739 27.102L22.0529 32.64L22.4259 29.133C22.4259 29.133 28.9129 23.282 32.6109 19.947C32.7189 19.849 32.7339 19.685 32.6439 19.57C32.5549 19.455 32.3909 19.428 32.2679 19.506C27.9819 22.243 20.3739 27.102 20.3739 27.102Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2235_442">
+                        <rect width="24" height="24" fill="white" transform="translate(13 13)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+
+            <span>Регистрируясь, вы принимаете условия <a href="" class="text-blue">условия пользования</a> и <a href="" class="text-blue">политику конфиденциальности</a></span>
+            </div>
+
+            <div class="code-verified flex flex-col items-center justify-center">
+                <h2>Введите код подтверждения</h2>
+                <p class="text-center">Мы отправили код на адрес электронной почты <br> <a href="">masmilovadr@gmail.com</a></p>
+                <div class="flex items-center">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number">
+                </div>
+                <p class="timerCode">Отправить код повторно через <div id="timer">01:00</div></p>
+                <button class="resendButton">Отправить повторно</button>
+            
+
+                <a href="" class="text-blue">Назад к способам подтверждения</a>
+            </div>
+
+            <div class="flex flex-col items-center justify-center message-thank">
+                <h2>Отличное начало</h2>
+                <p class="text-center thank-you-message">Вы присоединились к платформе! Как только она полноценно заработает мы отправим вам данные для входа на почту <br> <a href="">masmilovadr@gmail.com</a></p>
+                <button class="closeAll">Спасибо</button>
+            </div>
+        </div>
+
+
+      
+        
+    </div>
     <div class="block1">
         <div class="container">
             <div class="header flex items-center justify-between">
@@ -19,17 +115,17 @@
                 </div>
                 
                 <ul class="menu flex items-center justify-between">
-                    <li class="active"><a href="">Сообщество</a></li>
-                    <li><a href="">Безопасность</a></li>
-                    <li><a href="">Обучение</a></li>
-                    <li><a href="">Диагностика</a></li>
-                    <li><a href="">Лечение</a></li>
-                    <li><a href="">Бизнес</a></li>
-                    <li><a href="">Пациенты</a></li>
+                    <li class=""><a href="#community">Сообщество</a></li>
+                    <li><a href="#security">Безопасность</a></li>
+                    <li><a href="#learn">Обучение</a></li>
+                    <li><a href="#diagnostics">Диагностика</a></li>
+                    <li><a href="#illness">Лечение</a></li>
+                    <li><a href="#business">Бизнес</a></li>
+                    <li><a href="#patients">Пациенты</a></li>
                 </ul>
 
 
-                <a href="" class="link text-decoration-none text-white flex items-center">
+                <a href="javascript:void(0);" class="link text-decoration-none text-white flex items-center">
                     Присоединиться
                     
                     <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +144,7 @@
         </div>
     </div>
 
-    <div class="block2">
+    <div class="block2" >
         <div class="container">
             <div class="flex flex-col items-start">
             <div class="flex justify-between w-full">
@@ -70,8 +166,13 @@
 
             <div class="banner-images flex justify-between w-full">
                 <div class="video">
+                    <!-- <video width="579" height="342" controls autoplay mutedy>
+                        <source src="images/pexels-tima-miroshnichenko-6010766 (2160p).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> -->
                     <img src="images/main banner (video or slider) (1).png" alt="">
                 </div>
+                
 
                 <div class="image-animation">
                     <div class="flex flex-col text-animate">
@@ -83,7 +184,7 @@
                         </div>
 
                         <div class="image-group-animate flex flex-col items-center">
-                            <p class="w-full">Здесь будет короткий поясняющий текст. Создание собственных обучающих программ. Здесь будет короткий поясняющий текст. </p>
+                            <p class="w-full">Мы создаём систему, позволяющую врачам со всего мира участвовать в онлайн консилиумах, обеспечивая точную диагностику без языковых барьеров, опираясь на глубокий анализ клинических случаев.</p>
                             <img src="images/Rectangle 4686.png" alt="">
                         </div>
                     </div>
@@ -95,12 +196,12 @@
                             <div class="num flex items-center justify-center">
                                 02
                             </div>
-                            <p class="uppercase text-white h-full">Обучение на реальных случаях</p>
+                            <p class="uppercase text-white h-full">Обмен клинической информацией</p>
                         </div>
 
                         <div class="image-group-animate flex flex-col items-center">
-                            <p class="w-full">Здесь будет короткий поясняющий текст. Создание собственных обучающих программ. Здесь будет короткий поясняющий текст. </p>
-                            <img src="images/Rectangle 4686.png" alt="">
+                            <p class="w-full">Пространство для безопасного обмена клинической информацией с коллегами, вне зависимости от формата данных и места и хранения.</p>
+                            <img src="images/Rectangle 4686 (6).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -115,8 +216,8 @@
                         </div>
 
                         <div class="image-group-animate flex flex-col items-center">
-                            <p class="w-full">Здесь будет короткий поясняющий текст. Создание собственных обучающих программ. Здесь будет короткий поясняющий текст. </p>
-                            <img src="images/Rectangle 4686.png" alt="">
+                            <p class="w-full">Используйте шаблон предложенный нами, или создайте свой, для быстрого и простого создания собственного обучающего курса, без отрыва от практической деятельности.</p>
+                            <img src="images/Rectangle 4686 (1).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -127,12 +228,13 @@
                             <div class="num flex items-center justify-center">
                                 04
                             </div>
-                            <p class="uppercase text-white h-full">Обмен клинической информацией</p>
+                            <p class="uppercase text-white h-full">Обучение на реальных случаях</p>
                         </div>
 
                         <div class="image-group-animate flex flex-col items-center">
-                            <p class="w-full">Здесь будет короткий поясняющий текст. Создание собственных обучающих программ. Здесь будет короткий поясняющий текст. </p>
-                            <img src="images/Rectangle 4686.png" alt="">
+                            <p class="w-full">Обучайте и обучайтесь. 
+                                Транслируете в режиме реального времени а также демонстрируйте записи своих операций. Контролируйте доступ к своим трансляциям сами. Расширьте свои возможности заработка не отрываюсь основной деятельности. </p>
+                            <img src="images/Rectangle 4686 (2).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -147,8 +249,8 @@
                         </div>
 
                         <div class="image-group-animate flex flex-col items-center">
-                            <p class="w-full">Здесь будет короткий поясняющий текст. Создание собственных обучающих программ. Здесь будет короткий поясняющий текст. </p>
-                            <img src="images/Rectangle 4686.png" alt="">
+                            <p class="w-full">Принимайте активное участие в диагностике и лечении пациентов. Формируйте свою профессиональную команду, развивайте онлайн-клинику и становитесь частью глобального медицинского сообщества.   </p>
+                            <img src="images/Rectangle 4686 (3).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -163,8 +265,8 @@
                         </div>
 
                         <div class="image-group-animate flex flex-col items-center">
-                            <p class="w-full">Здесь будет короткий поясняющий текст. Создание собственных обучающих программ. Здесь будет короткий поясняющий текст. </p>
-                            <img src="images/Rectangle 4686.png" alt="">
+                            <p class="w-full">Упростите и выведите на новый уровень создание, хранение, поиск и анализ медицинской информации своих пациентов. Улучшите коммуникацию со своими пациентами выводя её на новый уровень.   </p>
+                            <img src="images/Rectangle 4686 (4).png" alt="">
                         </div>
                     </div>
                 </div>
@@ -179,15 +281,15 @@
                         </div>
 
                         <div class="image-group-animate flex flex-col items-center">
-                            <p class="w-full">Здесь будет короткий поясняющий текст. Создание собственных обучающих программ. Здесь будет короткий поясняющий текст. </p>
-                            <img src="images/Rectangle 4686.png" alt="">
+                            <p class="w-full">Станьте частью международного медицинского сообщества, участвуйте в научной, диагностической и клинической деятельности. Оказывайте онлайн консультации. Формируйте личный бренд. Постройте свою клинику с нами.</p>
+                            <img src="images/Rectangle 4686 (5).png" alt="">
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <a href="" class="link animate-link text-decoration-none text-white flex items-start">
+            <a href="javascript:void(0);" class="link animate-link text-decoration-none text-white flex items-start">
                 Присоединиться к платформе
                 
                 <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,7 +369,7 @@
                         <line x1="0.5" y1="341" x2="0.500015" y2="-2.18557e-08" stroke="#538EFF"/>
                     </svg>
                         
-                    <p>накопление и обработка данных от врачей и пациентов со всего мира для совместного решения клинических задач и диагностики</p>
+                    <p>улучшить и продлить жизнь каждого человека, создав  персонализированную медицину, способную предсказывать и предотвращать заболевания</p>
                 </div>
 
             </div>
@@ -275,7 +377,7 @@
                 <div class="flex flex-col whoami">
                     <div class="line"></div>
                     <div class="container">
-                        <div class="w-full flex items-start texture">
+                        <div class="flex items-start texture">
                             <h1 class="uppercase text-blue" style="opacity: 0;">НашА миссиЯ</h1>
                             <svg width="492" height="61" viewBox="0 0 492 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-outside-1_539_917" maskUnits="userSpaceOnUse" x="-2.62268e-06" y="-2.14623e-05" width="492" height="61" fill="black">
@@ -346,17 +448,17 @@
         <img src="images/ellipses.png" alt="">
         <div class="container">
             <div class="client-desc flex justify-between">
-                <div class="client flex items-center">
-                    <p>Накопление и обработка данных от врачей и пациентов со всего мира для решения клинических задач и диагностики</p>
+                <div class="client flex items-start">
+                    <p>В <span>UNUM.CLINIC</span> предоставляются все условия для профессионального роста и самореализации в здравоохранении и медицине. Продолжайте практику онлайн - ваши знания и опыт бесценны</p>
                 </div>
 
-                <div class="client client-second flex items-center">
-                    <p>Накопление и обработка данных от врачей и пациентов со всего мира для решения клинических задач и диагностики</p>
+                <div class="client client-second flex items-start">
+                    <p><span>UNUM.CLINIC</span> - это место где ваше здоровье находится в центре внимания алгоритмов нашей системы, управляемой врачами нового поколения</p>
                 </div>
 
 
-                <div class="client flex items-center">
-                    <p class="ml-8">Накопление и обработка данных от врачей и пациентов со всего мира для решения клинических задач и диагностики</p>
+                <div class="client flex items-start">
+                    <p class="ml-8"></p>
                 </div>
             </div>
         </div>
@@ -380,7 +482,12 @@
                     <line x1="0.5" y1="2.18557e-08" x2="0.499975" y2="563" stroke="#538EFF"/>
                 </svg>
                     
-                <img src="images/LOGO ANIMATION.png" alt="">
+                <svg id="animation-logo" class="animation-logo" width="400" height="209" viewBox="0 0 400 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path  class="anim-logo" d="M232.48 119.923C227.971 119.923 224.25 118.468 221.317 115.559C218.383 112.651 216.917 108.957 216.917 104.479C216.917 100.001 218.383 96.3072 221.317 93.3988C224.25 90.4891 227.971 89.0347 232.48 89.0347C234.791 89.0347 236.938 89.4703 238.917 90.3395C240.898 91.2094 242.573 92.4435 243.946 94.0408C245.319 95.638 246.28 97.5057 246.829 99.6446H242.971C242.161 97.4768 240.832 95.7799 238.983 94.5535C237.133 93.3271 234.965 92.714 232.48 92.714C229.07 92.714 226.273 93.8188 224.091 96.0291C221.909 98.2397 220.818 101.063 220.818 104.5C220.818 107.937 221.909 110.753 224.091 112.949C226.273 115.146 229.07 116.244 232.48 116.244C235.023 116.244 237.234 115.595 239.113 114.297C240.991 112.999 242.321 111.195 243.1 108.885H247.002C246.136 112.279 244.394 114.967 241.778 116.95C239.163 118.931 236.063 119.923 232.48 119.923ZM264.51 115.943H277.862V119.452H260.74V89.5051H264.51V115.943ZM291.037 119.452V89.5051H294.807V119.452H291.037ZM331.692 89.5051H335.42V119.452H332.211L314.915 96.0939V119.452H311.23V89.5051H314.655L331.692 112.607V89.5051ZM351.801 119.452V89.5051H355.571V119.452H351.801ZM385.478 119.923C380.968 119.923 377.248 118.468 374.315 115.559C371.381 112.651 369.916 108.957 369.916 104.479C369.916 100.001 371.381 96.3072 374.315 93.3988C377.248 90.4891 380.968 89.0347 385.478 89.0347C387.79 89.0347 389.937 89.4703 391.916 90.3395C393.895 91.2094 395.573 92.4435 396.946 94.0408C398.316 95.638 399.278 97.5057 399.827 99.6446H395.969C395.16 97.4768 393.832 95.7799 391.981 94.5535C390.132 93.3271 387.963 92.714 385.478 92.714C382.068 92.714 379.272 93.8188 377.088 96.0291C374.908 98.2397 373.816 101.063 373.816 104.5C373.816 107.937 374.908 110.753 377.088 112.949C379.272 115.146 382.068 116.244 385.478 116.244C388.02 116.244 390.232 115.595 392.111 114.297C393.99 112.999 395.32 111.195 396.099 108.885H400C399.133 112.279 397.392 114.967 394.777 116.95C392.161 118.931 389.062 119.923 385.478 119.923Z" fill="black"/>
+                    <path class="anim-logo" d="M26.1753 119.966C22.7368 119.966 19.8822 118.868 17.6139 116.671C15.3446 114.475 14.2104 111.68 14.2104 108.287V89.5054H18.0689V108.029C18.0689 110.482 18.8205 112.472 20.3235 113.998C21.8256 115.524 23.7769 116.287 26.1753 116.287C28.5171 116.287 30.439 115.524 31.9421 113.998C33.4442 112.472 34.1967 110.482 34.1967 108.029V89.5054H38.0541V108.287C38.0541 111.68 36.9268 114.475 34.6722 116.671C32.4176 118.868 29.5858 119.966 26.1753 119.966ZM74.5489 89.5054H78.2773V119.452H75.0695L57.7723 96.0941V119.452H54.087V89.5054H57.512L74.5489 112.607V89.5054ZM106.233 119.966C102.793 119.966 99.9397 118.868 97.6705 116.671C95.4021 114.475 94.268 111.68 94.268 108.287V89.5054H98.1254V108.029C98.1254 110.482 98.878 112.472 100.38 113.998C101.883 115.524 103.834 116.287 106.233 116.287C108.574 116.287 110.496 115.524 111.999 113.998C113.502 112.472 114.253 110.482 114.253 108.029V89.5054H118.112V108.287C118.112 111.68 116.985 114.475 114.73 116.671C112.476 118.868 109.643 119.966 106.233 119.966ZM169.52 119.452H165.661L161.716 96.0516L151.225 118.681H150.227L139.737 96.0941L135.792 119.452H131.89L137.006 89.5054H140.647L150.705 111.495L160.762 89.5054H164.491L169.52 119.452Z" fill="black"/>
+                    <path class="anim-logo" d="M197.216 115.486C197.057 116.989 196.866 118.482 196.642 119.965H192.075C192.308 118.483 192.508 116.99 192.674 115.486H197.216Z" fill="#ED1C24"/>
+                    <path class="last-anim" d="M91.9012 -7.24012e-06C121.143 -7.24012e-06 147.617 11.6971 166.78 30.608C185.943 49.5181 197.796 75.6435 197.796 104.5C197.796 106.823 197.718 109.128 197.567 111.414H193.04C193.198 109.129 193.28 106.824 193.28 104.5C193.28 76.8739 181.933 51.8627 163.587 33.7583C116.988 -12.2285 35.0425 -2.83334 0 52.5512C4.68146 44.5022 10.4188 37.1256 17.0232 30.608C36.1853 11.6971 62.6606 -7.24012e-06 91.9012 -7.24012e-06ZM195.947 124.038C191.918 145.06 181.508 163.857 166.78 178.392C147.617 197.303 121.143 209 91.9012 209C62.6606 209 36.1853 197.303 17.0232 178.392C10.4188 171.874 4.68146 164.498 0 156.449C35.0425 211.833 116.988 221.228 163.587 175.242C177.493 161.519 187.375 143.827 191.345 124.038H195.947Z" fill="black"/>
+                </svg>
             </div>
         </div>
     </div>
@@ -419,7 +526,7 @@
     <div class="block8">
         <div class="container">
             <div class="flex flex-col items-center justify-center">
-            <div class="flex flex-col expert">
+            <div class="flex flex-col expert blocks" id="community">
                 <div class="flex items-center">
                     <img src="images/image 969.png" alt="">
                     <div class="banner-desc flex flex-col items-start">
@@ -430,7 +537,14 @@
                 </div>
             </div>
 
-            <div class="flex flex-col expert security blocks">
+            <svg class="line-animation wow animate__animated animate__fadeInLeft" width="27" height="163" viewBox="0 0 27 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-second" d="M14 1.55435L14 162.053" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="line-first" d="M6 1.0528L22 1.0528" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            
+            
+
+            <div class="flex flex-col expert security blocks" id="security">
                 <div class="flex items-center">
                     <img src="images/image 969 (1).png" alt="">
                     <div class="banner-desc flex flex-col items-start">
@@ -440,28 +554,49 @@
                 </div>
             </div>
 
-            <div class="flex flex-col expert learn blocks">
+            <svg class="line-animation" width="27" height="163" viewBox="0 0 27 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-second" d="M14 1.55435L14 162.053" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="line-first" d="M6 1.0528L22 1.0528" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <div class="flex flex-col expert learn blocks" id="learn">
                 <div class="flex items-center">
                     <img src="images/image 969 (2).png" alt="">
-                    <div class="banner-desc flex flex-col items-start">
+                    <div class="banner-desc flex flex-col items-start relative">
                         <h1>Обучайся и обучай</h1>
                         <p>На нашей платформе врачи имеют доступ к лучшим образовательным ресурсам и обучениям, предоставляемым ведущими экспертами в медицинской области. Вы сможете как учиться у лучших, так и делиться своими знаниями, обучая других врачей.</p>
                         <a href="">Подробнее</a>
+                        <svg width="24" height="50" viewBox="0 0 24 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5013 18.2414C13.298 14.2448 12 0.824707 12 0.824707C12 0.824707 10.702 14.2448 8.49874 18.2414C6.2955 22.2379 0 25.4165 0 25.4165C0 25.4165 6.2955 28.595 8.49874 32.5915C10.702 36.5881 12 50.0082 12 50.0082C12 50.0082 13.298 36.5881 15.5013 32.5915C17.7046 28.595 24 25.4165 24 25.4165C24 25.4165 17.7046 22.2379 15.5013 18.2414Z" fill="white"/>
+                        </svg>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col expert diagnostic blocks">
+            <svg class="line-animation" width="27" height="163" viewBox="0 0 27 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-second" d="M14 1.55435L14 162.053" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="line-first" d="M6 1.0528L22 1.0528" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <div class="flex flex-col expert diagnostic blocks" id="diagnostics">
                 <div class="flex items-center">
                     <img src="images/image 969 (3).png" alt="">
-                    <div class="banner-desc flex flex-col items-start">
+                    <div class="banner-desc flex flex-col items-start relative">
+                        <svg class="last-child" width="24" height="50" viewBox="0 0 24 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5013 18.2414C13.298 14.2448 12 0.824707 12 0.824707C12 0.824707 10.702 14.2448 8.49874 18.2414C6.2955 22.2379 0 25.4165 0 25.4165C0 25.4165 6.2955 28.595 8.49874 32.5915C10.702 36.5881 12 50.0082 12 50.0082C12 50.0082 13.298 36.5881 15.5013 32.5915C17.7046 28.595 24 25.4165 24 25.4165C24 25.4165 17.7046 22.2379 15.5013 18.2414Z" fill="white"/>
+                        </svg>
                         <h1>Диагностика</h1>
                         <p>Для точной и эффективной диагностики, на нашей платформе вы можете консультироваться со специалистами из различных областей медицины.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col expert ill blocks">
+            <svg class="line-animation" width="27" height="163" viewBox="0 0 27 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-second" d="M14 1.55435L14 162.053" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="line-first" d="M6 1.0528L22 1.0528" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <div class="flex flex-col expert ill blocks" id="illness">
                 <div class="flex items-center">
                     <img src="images/image 969 (4).png" alt="">
                     <div class="banner-desc flex flex-col items-start">
@@ -471,7 +606,12 @@
                 </div>
             </div>
 
-            <div class="flex flex-col expert business blocks">
+            <svg class="line-animation" width="27" height="163" viewBox="0 0 27 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-second" d="M14 1.55435L14 162.053" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="line-first" d="M6 1.0528L22 1.0528" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <div class="flex flex-col expert business blocks" id="business">
                 <div class="flex items-center">
                     <img src="images/image 969 (5).png" alt="">
                     <div class="banner-desc flex flex-col items-start">
@@ -481,7 +621,12 @@
                 </div>
             </div>
 
-            <div class="flex flex-col expert patient blocks">
+            <svg class="line-animation" width="27" height="163" viewBox="0 0 27 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-second" d="M14 1.55435L14 162.053" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="line-first" d="M6 1.0528L22 1.0528" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <div class="flex flex-col expert patient blocks" id="patients">
                 <div class="flex items-center">
                     <img src="images/image 969 (6).png" alt="">
                     <div class="banner-desc flex flex-col items-start">
@@ -491,7 +636,12 @@
                 </div>
             </div>
 
-            <a href="" class="link animate-link text-decoration-none text-white flex items-start blocks">
+            <svg class="line-animation" width="27" height="163" viewBox="0 0 27 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line-second" d="M14 1.55435L14 162.053" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="line-first" d="M6 1.0528L22 1.0528" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <a href="javascript:void(0);" class="link animate-link text-decoration-none text-white flex items-start blocks">
                 Присоединиться к платформе
                 
                 <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -517,7 +667,7 @@
                 <img src="images/Group 1 (2).png" alt="">
             </div>
             
-            <div class="footer-info flex flex-col justify-between w-full">
+            <div class="footer-info flex flex-col justify-between">
                 <div class="flex items-center w-full justify-center info-email">
                     <a href="tel:+ 7 (727) 45-13-13">+ 7 (727) 45-13-13</a>
                     <svg width="1" height="141" viewBox="0 0 1 141" fill="none" xmlns="http://www.w3.org/2000/svg">
