@@ -679,7 +679,9 @@
 .banner-desc a:hover {
   background-color: #538eff;
 }
-
+.block4 img {
+  display: none;
+}
 
 
 

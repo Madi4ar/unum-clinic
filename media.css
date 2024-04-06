@@ -248,6 +248,7 @@
         display: none;
     }
     .block4 img {
+        display: block;
         position: absolute;
         right:0;
     }
