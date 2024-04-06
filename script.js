@@ -17,13 +17,15 @@ imagesAnimate.forEach((element) => {
     }
   });
 
+  
+
   document.addEventListener("scroll", function () {
     var sections = document.querySelectorAll(".blocks");
     var scrollPosition = window.scrollY;
-
+  
     sections.forEach(function (section) {
       var rect = section.getBoundingClientRect();
-      if (rect.top <= 50 && rect.bottom >= 50) {
+      if (rect.top <= 200 && rect.bottom >= 200) { 
         var id = section.getAttribute("id");
         document.querySelectorAll(".menu li").forEach(function (menuItem) {
           menuItem.classList.remove("active");
@@ -49,12 +51,11 @@ imagesAnimate.forEach((element) => {
     const linesFirst = document.querySelectorAll(".line-first");
     const linesSecond = document.querySelectorAll(".line-second");
     const blocks = document.querySelectorAll(".blocks");
-
-    // Функция для проверки, находится ли элемент в видимой области
+  
     const isInViewport = (elem) => {
       const bounding = elem.getBoundingClientRect();
       return (
-        bounding.top >= 0 &&
+        bounding.top >= -200 && 
         bounding.left >= 0 &&
         bounding.bottom <=
           (window.innerHeight || document.documentElement.clientHeight) &&
@@ -62,26 +63,29 @@ imagesAnimate.forEach((element) => {
           (window.innerWidth || document.documentElement.clientWidth)
       );
     };
-
-    // Функция для запуска анимации при достижении блока
+  
     const handleScroll = () => {
       blocks.forEach((block, index) => {
         if (isInViewport(block)) {
-          linesFirst[index].style.animationPlayState = "running";
-          linesSecond[index].style.animationPlayState = "running";
+          if (linesFirst[index] && linesSecond[index]) {
+            linesFirst[index].style.animationPlayState = "running";
+            linesSecond[index].style.animationPlayState = "running";
+          }
         } else {
-          linesFirst[index].style.animationPlayState = "paused";
-          linesSecond[index].style.animationPlayState = "paused";
+          if (linesFirst[index] && linesSecond[index]) {
+            linesFirst[index].style.animationPlayState = "paused";
+            linesSecond[index].style.animationPlayState = "paused";
+          }
         }
       });
     };
-
-    // Добавляем обработчик события скроллинга
+  
     window.addEventListener("scroll", handleScroll);
-
-    // Запускаем обработку события при загрузке страницы
+  
     handleScroll();
-  });
+});
+
+  
 
   window.addEventListener("load", function () {
     var video = document.getElementById("myVideo");
@@ -172,4 +176,13 @@ imagesAnimate.forEach((element) => {
   inputs.forEach((input) => {
     input.addEventListener("keypress", handleEnterKeyPress);
   });
+
+
+  document.querySelector('.mobile-menu').onclick = function() {
+    let menu = document.querySelector('.menu');
+    let head = document.querySelector('.block1');
+    menu.classList.toggle('disblock');
+    head.classList.toggle('mobile-height');
+
+  }
 });

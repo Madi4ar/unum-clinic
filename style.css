@@ -63,6 +63,9 @@
 .logo {
   margin-top: 4px;
 }
+.mobile-height {
+  height: 285px;
+}
 .code-verified {
   display: none;
 }
@@ -197,7 +200,7 @@
   background: #019dff;
   border-radius: 100px;
   color: white;
-  border: 2px solid #538eff;
+  border: 2px solid rgba(255, 255, 255, .4);
 }
 .banner-desc svg {
   position: absolute;
@@ -221,7 +224,8 @@
   color: white;
 }
 .block1 {
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, .8);
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -236,7 +240,7 @@
 .banner-text {
   font-size: 40px;
   width: 741px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .banner-text span {
   color: #538eff;
@@ -292,10 +296,18 @@
 .line-second {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: draw 3s ease forwards;
 }
 
-@keyframes draw {
+.line-first {
+  animation: drawFirst 3s ease forwards;
+}
+
+.line-second {
+  animation: drawSecond 5s ease forwards;
+  animation-delay: .5s; 
+}
+
+@keyframes drawFirst {
   0% {
     stroke-dashoffset: 1000;
   }
@@ -304,9 +316,19 @@
   }
 }
 
-.line-second {
-  animation-delay: 1s;
+@keyframes drawSecond {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
+
+
+
+
+
 
 .image-animation {
   cursor: pointer;
@@ -314,7 +336,7 @@
   height: 342px;
   background: black;
   border-radius: 34px;
-  transition: 1s all ease;
+  transition: width 0.5s ease, background 0.5s ease; 
   position: relative;
   display: flex;
   align-items: center;
@@ -326,7 +348,7 @@
   flex-direction: column;
   align-items: center;
   transform: rotate(-90deg);
-  transition: 1s all ease;
+  transition: transform 0.5s ease; 
 }
 
 .numberic {
@@ -336,8 +358,23 @@
 
 .active-animation {
   width: 268px;
-  transition: 1s all ease;
   background: #538eff;
+}
+
+.image-animation.hide-animation {
+  transition: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu p {
+  color:white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.mobile-menu svg{
+  margin-left: 8px;
 }
 
 .num {
@@ -390,7 +427,7 @@
 }
 
 .ideal-text p {
-  width: 350px;
+  width: 471px;
   line-height: 150%;
   color: #538eff;
   margin-left: 8px;
@@ -402,6 +439,7 @@
 
 .animate-link {
   padding: 10.5px 20.5px;
+  margin-top: 32px;
 }
 .link:hover {
   background: #538eff;
@@ -417,7 +455,7 @@
 .our-mission-text p {
   width: 886px;
   color: white;
-  line-height: 24px;
+  line-height: 150%;
   margin-top: 84px;
   margin-left: 39px;
   font-size: 22px;
@@ -428,9 +466,18 @@
 .our-mission-text h1 {
   margin-top: 84px;
 }
+.our-mission-text p span {
+  display: none;
+}
+.our-mission-text a{
+  display: none;
+}
+.whoam-mobile {
+  display: none;
+}
 .main {
   position: absolute;
-  top: -20%;
+  top: -25%;
 }
 
 .text {
@@ -512,6 +559,7 @@
   padding-bottom: 61px;
   color: white;
   font-size: 28px;
+  font-weight: 500;
 }
 .client a {
   background: black;
@@ -554,7 +602,7 @@
 }
 .about-title h1 {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .about-wrap .flex-col {
   padding-top: 120px;
@@ -564,6 +612,8 @@
   line-height: 150%;
   width: 862px;
   margin-top: 28px;
+  color:#303030;
+  font-size:18px;
 }
 .line-link {
   margin-right: 94px;
@@ -578,6 +628,8 @@
 .hang-wrap .flex-col p {
   margin-top: 16px;
   width: 647px;
+  line-height: 150%;
+  font-weight: 400;
 }
 .expert {
   background-color: #538eff;
@@ -607,7 +659,7 @@
   color: white;
   line-height: 150%;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
 }
 .banner-desc p {
   margin-top: 40px;
@@ -628,6 +680,22 @@
   background-color: #538eff;
 }
 
+
+
+
+.hidden-button {
+  background-color: black;
+  border: 1px solid white;
+  padding: 10.5px 124px;
+  border-radius: 60px;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  display: none;
+}
+.hidden-button:hover {
+  background-color: #538eff;
+}
 .line-animation {
   padding-top: 10px;
   padding-bottom: 10px;
