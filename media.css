@@ -1,5 +1,5 @@
-@media screen and (max-width: 1400px) {
-   
+    @media screen and (max-width: 1400px) {
+        .container {width: 100%; padding: 0 15px; box-sizing: border-box;}
     }
     @media screen and (max-width: 1200px) {
     .container{width:1140px}
@@ -27,6 +27,9 @@
     .block1 {
         background: rgba(5, 5, 5, 0.4);
     }
+    .header ul {
+        background:rgb(97 97 97 / 50%);
+    }
     .menu {
         display: flex;
         flex-direction: column;
@@ -43,11 +46,13 @@
     }
     .menu {
         display: none;
+        opacity: 0;
         position:absolute;
         top:60px;
         right: 10px;
         padding-top: 8px;
         padding-bottom: 8px;
+        transition:.5s all ease;
     }
     .menu li.active {
         background:none;
@@ -329,9 +334,12 @@
     .hidden-button {
         display: flex;
     }
-    .block8 .animate-link {
-        display: flex;
+    .line-animation:last-child {
+        display: none;
     }
+    /* .block8 .animate-link {
+        display: flex;
+    } */
     .texture svg {
         display: none;
     }
@@ -342,6 +350,40 @@
         background: black;
     }
     .popup_in {
+        width: 90%;
+    }
+    .popup_in input[type="email"] {
+        width: 80%;
+        font-size: 16px;
+    }
+    .popup_in button {
+        width: 90%;
+        text-align: center;
+        padding:10.5px 67px;
+    }
+    .registrate {
+        width: 100%;
+    }
+    .popup_in span {
+        width: 90%;
+    }
+    #registrationForm {
+        width: 100%;
+    }
+    .popup_in h2 {
+        text-align: center;
+    }
+    .code-verified {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .popup_in p {
+        font-size: 16px;
+    }
+    .thank-you-message {
+        width: 100%;
+    }
+    .message-thank {
         width: 100%;
     }
     }
