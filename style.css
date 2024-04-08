@@ -238,13 +238,34 @@
   top: -50%;
   right: 50%;
 }
+.block2 .container {
+  position: relative;
+}
+.video-main {
+  overflow: hidden;
+  width: 100%;
+}
+.video-main .video-mainer {
+  display: none;
+}
+.video-main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .video {
   border-radius: 34px;
+  overflow: hidden;
+  width: 579px;
+  height: 342px;
 }
-/* .video video {
-  border-radius: 34px;
-} */
 
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .menu .active a {
   color: white;
 }

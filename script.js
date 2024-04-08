@@ -188,6 +188,5 @@ imagesAnimate.forEach((element) => {
     let menu = document.querySelector(".menu");
     let head = document.querySelector(".block1");
     menu.classList.toggle("disblock");
-    head.classList.toggle("mobile-height");
   };
 });
