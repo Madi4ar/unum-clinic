@@ -17,15 +17,13 @@ imagesAnimate.forEach((element) => {
     }
   });
 
-  
-
   document.addEventListener("scroll", function () {
     var sections = document.querySelectorAll(".blocks");
     var scrollPosition = window.scrollY;
-  
+
     sections.forEach(function (section) {
       var rect = section.getBoundingClientRect();
-      if (rect.top <= 200 && rect.bottom >= 200) { 
+      if (rect.top <= 200 && rect.bottom >= 200) {
         var id = section.getAttribute("id");
         document.querySelectorAll(".menu li").forEach(function (menuItem) {
           menuItem.classList.remove("active");
@@ -51,11 +49,11 @@ imagesAnimate.forEach((element) => {
     const linesFirst = document.querySelectorAll(".line-first");
     const linesSecond = document.querySelectorAll(".line-second");
     const blocks = document.querySelectorAll(".blocks");
-  
+
     const isInViewport = (elem) => {
       const bounding = elem.getBoundingClientRect();
       return (
-        bounding.top >= -200 && 
+        bounding.top >= -200 &&
         bounding.left >= 0 &&
         bounding.bottom <=
           (window.innerHeight || document.documentElement.clientHeight) &&
@@ -63,7 +61,7 @@ imagesAnimate.forEach((element) => {
           (window.innerWidth || document.documentElement.clientWidth)
       );
     };
-  
+
     const handleScroll = () => {
       blocks.forEach((block, index) => {
         if (isInViewport(block)) {
@@ -79,13 +77,11 @@ imagesAnimate.forEach((element) => {
         }
       });
     };
-  
-    window.addEventListener("scroll", handleScroll);
-  
-    handleScroll();
-});
 
-  
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+  });
 
   window.addEventListener("load", function () {
     var video = document.getElementById("myVideo");
@@ -134,6 +130,17 @@ imagesAnimate.forEach((element) => {
     popup.classList.remove("disblock");
   };
 
+  const emailInput = document.getElementById("emailInput");
+  const registerButton = document.getElementById("registerButton");
+
+  emailInput.addEventListener("input", function () {
+    if (emailInput.value.trim() !== "") {
+      registerButton.disabled = false;
+    } else {
+      registerButton.disabled = true;
+    }
+  });
+
   document
     .getElementById("registrationForm")
     .addEventListener("submit", function (event) {
@@ -177,12 +184,10 @@ imagesAnimate.forEach((element) => {
     input.addEventListener("keypress", handleEnterKeyPress);
   });
 
-
-  document.querySelector('.mobile-menu').onclick = function() {
-    let menu = document.querySelector('.menu');
-    let head = document.querySelector('.block1');
-    menu.classList.toggle('disblock');
-    head.classList.toggle('mobile-height');
-
-  }
+  document.querySelector(".mobile-menu").onclick = function () {
+    let menu = document.querySelector(".menu");
+    let head = document.querySelector(".block1");
+    menu.classList.toggle("disblock");
+    head.classList.toggle("mobile-height");
+  };
 });

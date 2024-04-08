@@ -15,7 +15,7 @@
 .disblock {
   display: flex !important;
   opacity: 1 !important;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
 }
 .relative {
   position: relative;
@@ -61,6 +61,9 @@
 }
 .bg-black {
   background: black;
+}
+.bg-blacks {
+  background: black !important ;
 }
 .logo {
   margin-top: 4px;
@@ -111,8 +114,11 @@
   width: 416px;
   padding: 12px;
   outline: #538eff;
-  border: none;
+  border: 1px solid white;
   font-size: 20px;
+}
+.popup_in input[type="email"]:focus {
+  border-color: #538eff;
 }
 .popup_in input[type="number"] {
   width: 60px;
@@ -137,7 +143,16 @@
   background: black;
   color: white;
   font-size: 18px;
+  cursor: pointer;
 }
+
+.popup_in button:disabled {
+  background: #b1b1b1;
+  color: white;
+  cursor: not-allowed;
+  border: none;
+}
+
 .popup_in p {
   margin-top: 16px;
   font-size: 18px;
@@ -149,12 +164,20 @@
 .social_media svg {
   margin-left: 20px;
   cursor: pointer;
+  transition: 1s all ease-in-out;
 }
-.social_media svg:hover rect {
+.first-social svg:hover rect {
   stroke: #538eff;
 }
-.social_media svg:hover path {
+.first-social svg:hover path {
   fill: #538eff;
+}
+
+.second-social svg:hover rect {
+  stroke: #538eff;
+}
+.second-social svg:hover path {
+  stroke: #538eff;
 }
 .popup_in span {
   margin-top: 28px;
@@ -202,7 +225,7 @@
   background: #019dff;
   border-radius: 100px;
   color: white;
-  border: 2px solid rgba(255, 255, 255, .4);
+  border: 2px solid rgba(255, 255, 255, 0.4);
 }
 .banner-desc svg {
   position: absolute;
@@ -227,7 +250,7 @@
 }
 .block1 {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, 0.8);
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -306,7 +329,7 @@
 
 .line-second {
   animation: drawSecond 5s ease forwards;
-  animation-delay: .5s; 
+  animation-delay: 0.5s;
 }
 
 @keyframes drawFirst {
@@ -327,22 +350,21 @@
   }
 }
 
-
-
-
-
-
 .image-animation {
   cursor: pointer;
   width: 68px;
   height: 342px;
   background: black;
   border-radius: 34px;
-  transition: width 0.5s ease, background 0.5s ease; 
+  transition: width 0.5s ease, background 0.5s ease, box-shadow 0.5s ease;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.image-animation:hover {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .text-animate {
@@ -350,7 +372,7 @@
   flex-direction: column;
   align-items: center;
   transform: rotate(-90deg);
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .numberic {
@@ -360,6 +382,12 @@
 
 .active-animation {
   width: 268px;
+  background: #538eff;
+  animation-name: textFade;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+}
+.bg-blue {
   background: #538eff;
 }
 
@@ -371,11 +399,11 @@
   display: none;
 }
 .mobile-menu p {
-  color:white;
+  color: white;
   font-size: 18px;
   font-weight: 500;
 }
-.mobile-menu svg{
+.mobile-menu svg {
   margin-left: 8px;
 }
 
@@ -410,8 +438,29 @@
 }
 .text-animation {
   transform: rotate(0deg);
-  transition: 1s all ease;
+  /* transition: 1s all ease; */
+  opacity: 1;
+  transition: opacity 0.2s ease 0.8s, width 0.8s ease;
 }
+.text-animation .numberic {
+  animation-name: textFade;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.text-animation .image-group-animate p {
+  animation-name: textFade;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+@keyframes textFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .text-animation .num {
   transform: rotate(0deg);
 }
@@ -471,7 +520,7 @@
 .our-mission-text p span {
   display: none;
 }
-.our-mission-text a{
+.our-mission-text a {
   display: none;
 }
 .whoam-mobile {
@@ -614,8 +663,8 @@
   line-height: 150%;
   width: 862px;
   margin-top: 28px;
-  color:#303030;
-  font-size:18px;
+  color: #303030;
+  font-size: 18px;
 }
 .line-link {
   margin-right: 94px;
@@ -684,8 +733,6 @@
 .block4 img {
   display: none;
 }
-
-
 
 .hidden-button {
   background-color: black;

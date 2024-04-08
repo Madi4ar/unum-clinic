@@ -34,18 +34,18 @@
             <h2>Стать частью UNUM</h2>
             <form id="registrationForm" class="flex flex-col items-center justify-center">
                 <input type="email" id="emailInput" placeholder="Введите адрес электронной почты" required>
-                <button>Зарегистрироваться</button>
+                <button id="registerButton" disabled>Зарегистрироваться</button>
             </form>
             <p>или</p>
             <div class="flex items-center social_media">
-                <a href="">
+                <a href="" class="first-social">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5098 13.7751C29.5687 13.2764 29.0835 12.885 28.5938 13.0309C27.7136 13.293 26.8182 13.8477 26.2235 14.5302C25.6541 15.1758 25.1406 16.1267 25.0314 17.1159C24.9798 17.5837 25.4137 17.9585 25.8843 17.8667C26.8439 17.6797 27.7483 17.086 28.3527 16.3682C28.9485 15.6608 29.3957 14.7415 29.5098 13.7751ZM33.6476 28.691C33.9482 28.863 34.077 29.222 33.9533 29.541C33.724 30.1325 33.2963 31.087 32.6166 32.0612C31.6854 33.396 30.7189 34.726 29.1964 34.7535C27.7004 34.7806 27.2194 33.8835 25.509 33.8835C23.7992 33.8835 23.2647 34.726 21.8485 34.7806C20.3789 34.8351 19.2598 33.3371 18.3208 32.0071C16.4022 29.2867 14.9359 24.3196 16.9048 20.9669C17.8828 19.3018 19.6307 18.2475 21.5278 18.2204C22.971 18.1934 24.3331 19.1726 25.2153 19.1726C26.0969 19.1726 27.7522 17.9951 29.4923 18.168C30.1334 18.1942 31.7936 18.3978 33.0776 19.7305C33.3575 20.021 33.3269 20.4853 33.0132 20.7405C32.2927 21.3266 31.1463 22.5636 31.1642 24.511C31.1874 26.9617 32.7963 28.2039 33.6476 28.691Z" fill="#1E1E1E"/>
                     </svg>
                 </a>
 
-                <a href="">
+                <a href="" class="second-social">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
                         <path d="M34.8055 23.0415H34V23H25V27H30.6515C29.827 29.3285 27.6115 31 25 31C21.6865 31 19 28.3135 19 25C19 21.6865 21.6865 19 25 19C26.5295 19 27.921 19.577 28.9805 20.5195L31.809 17.691C30.023 16.0265 27.634 15 25 15C19.4775 15 15 19.4775 15 25C15 30.5225 19.4775 35 25 35C30.5225 35 35 30.5225 35 25C35 24.3295 34.931 23.675 34.8055 23.0415Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -55,14 +55,14 @@
                     </svg>
                 </a>
                 
-                <a href="">
+                <a href="" class="second-social">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
                         <path d="M31 15H28C26.6739 15 25.4021 15.5268 24.4645 16.4645C23.5268 17.4021 23 18.6739 23 20V23H20V27H23V35H27V27H30L31 23H27V20C27 19.7348 27.1054 19.4804 27.2929 19.2929C27.4804 19.1054 27.7348 19 28 19H31V15Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 
-                <a href="">
+                <a href="" class="first-social">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#303030"/>
                         <g clip-path="url(#clip0_2235_442)">
@@ -187,8 +187,8 @@
                 </div>
                 
 
-                <div class="image-animation active-animation">
-                    <div class="flex flex-col text-animate text-animation">
+                <div class="image-animation bg-blacks">
+                    <div class="flex flex-col text-animate ">
                         <div class="numberic flex items-center ml-5">
                             <div class="num flex items-center justify-center round">
                                 01
@@ -203,7 +203,7 @@
                     </div>
                 </div>
                 
-                <div class="image-animation">
+                <div class="image-animation bg-blue">
                     <div class="flex flex-col text-animate">
                         <div class="numberic flex items-center ml-5">
                             <div class="num flex items-center justify-center round">
@@ -219,8 +219,8 @@
                     </div>
                 </div>
                 
-                <div class="image-animation">
-                    <div class="flex flex-col text-animate">
+                <div class="image-animation active-animation bg-blue">
+                    <div class="flex flex-col text-animate text-animation">
                         <div class="numberic flex items-center ml-5">
                             <div class="num flex items-center justify-center">
                                 03
@@ -235,7 +235,7 @@
                     </div>
                 </div>
                 
-                <div class="image-animation">
+                <div class="image-animation bg-blacks">
                     <div class="flex flex-col text-animate">
                         <div class="numberic flex items-center ml-5">
                             <div class="num flex items-center justify-center round">
@@ -252,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="image-animation">
+                <div class="image-animation bg-blue">
                     <div class="flex flex-col text-animate">
                         <div class="numberic flex items-center ml-5">
                             <div class="num flex items-center justify-center round">
@@ -268,7 +268,7 @@
                     </div>
                 </div>
 
-                <div class="image-animation">
+                <div class="image-animation bg-blacks">
                     <div class="flex flex-col text-animate">
                         <div class="numberic flex items-center ml-5">
                             <div class="num flex items-center justify-center round">
@@ -284,7 +284,7 @@
                     </div>
                 </div>
 
-                <div class="image-animation">
+                <div class="image-animation bg-blacks">
                     <div class="flex flex-col text-animate">
                         <div class="numberic flex items-center ml-5">
                             <div class="num flex items-center justify-center round">
