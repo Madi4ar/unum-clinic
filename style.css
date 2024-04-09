@@ -253,6 +253,22 @@
   height: 100%;
   object-fit: cover;
 }
+.top-arrow {
+  display: none;
+  animation: arrowAnimation 1.5s infinite alternate;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.second-img-footer {
+  display: none;
+}
 
 .video {
   border-radius: 34px;

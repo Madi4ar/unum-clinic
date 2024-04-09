@@ -83,11 +83,6 @@ imagesAnimate.forEach((element) => {
     handleScroll();
   });
 
-  window.addEventListener("load", function () {
-    var video = document.getElementById("myVideo");
-    video.play();
-  });
-
   document.querySelectorAll(".link").forEach((link) => {
     link.onclick = function () {
       const popup = document.querySelector(".pop_up");
