@@ -808,7 +808,7 @@ footer .footer-logo {
   height: 280px;
   width: 78%;
 }
-.footer-img img:last-child {
+.first-img-footer {
   position: absolute;
   top: -30%;
 }
