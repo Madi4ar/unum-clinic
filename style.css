@@ -797,17 +797,15 @@ footer {
 }
 
 footer .footer-logo {
-  margin-left: 39px;
-  margin-top: 87px;
+  position: absolute;
+  top: -81px;
 }
 
 .footer-img {
   width: 20%;
+  position: relative;
 }
-.footer-info {
-  height: 280px;
-  width: 78%;
-}
+
 .first-img-footer {
   position: absolute;
   top: -30%;
@@ -829,8 +827,9 @@ footer .footer-logo {
 .info-email a:nth-child(2) {
   margin-left: 156px;
 }
-footer .line {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+.footer-info {
+  height: 280px;
+  width: 78%;
 }
 
 .footer-info .text-white {
