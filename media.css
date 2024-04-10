@@ -614,7 +614,7 @@
     display: none;
   }
   .video-main {
-    height: 80vh;
+    height: 130vh;
   }
   .video-main .video-mainer {
     display: block;
@@ -919,7 +919,7 @@
   }
 
   .banner-desc {
-    margin-left: 80px;
+    margin-left: 20px;
   }
   .banner-desc h1 {
     font-size: 24px;

@@ -847,6 +847,23 @@ footer .footer-main-logo {
 .footer-info {
   height: 280px;
   width: 78%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-animation .number-three {
+  width: 32px;
+}
+.number-three {
+  width: 40px;
+}
+.number-seven img {
+  margin-top: 10px;
+}
+
+.number-two img {
+  margin-top: 30px;
 }
 
 .footer-info .text-white {
