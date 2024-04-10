@@ -1,3 +1,24 @@
+var cookieOptions = {
+  expires: 0,
+  path: "/",
+};
+
+if ($.cookie("visit6") == undefined) {
+  console.log("vis6");
+
+  $(".preloader").removeClass("hide");
+
+  setTimeout(function () {
+    $(".preloader").fadeOut(2000, function () {
+      setTimeout(function () {
+        $(".preloader_content").addClass("relative");
+      }, 2000);
+    });
+  }, 3000);
+
+  $.cookie("visit6", true, cookieOptions);
+}
+
 const imagesAnimate = document.querySelectorAll(".image-animation");
 
 imagesAnimate.forEach((element) => {

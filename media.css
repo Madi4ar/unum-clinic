@@ -302,11 +302,15 @@
     height: 375px;
   }
   .footer-logo {
+    display: block;
     transform: rotate(-90deg);
     position: absolute;
     left: 5%;
-    top: 30%;
+    top: 120px;
     margin: 0 !important;
+  }
+  .footer-main-logo {
+    display: none;
   }
   .footer-info {
     flex-direction: column;
@@ -370,6 +374,12 @@
   }
   .animation-logo {
     display: none;
+  }
+  .preloader .animation-logo {
+    display: flex;
+  }
+  .preloader p {
+    text-align: center;
   }
   .about-title h1 {
     font-size: 28px;
@@ -804,13 +814,7 @@
   footer {
     height: 375px;
   }
-  .footer-logo {
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 0;
-    top: 30%;
-    margin: 0 !important;
-  }
+
   .footer-info {
     flex-direction: column;
     width: 70%;
@@ -1287,13 +1291,7 @@
   footer {
     height: 375px;
   }
-  .footer-logo {
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 0;
-    top: 30%;
-    margin: 0 !important;
-  }
+
   .footer-info {
     flex-direction: column;
     width: 70%;
@@ -1913,6 +1911,21 @@
   }
   .message-thank {
     width: 90%;
+  }
+  footer .footer-main-logo {
+    display: none;
+  }
+  .footer-img {
+    position: static;
+  }
+  .preloader_content {
+    width: 80%;
+  }
+  .preloader .animation-logo {
+    width: 80%;
+  }
+  .preloader p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 375px) {
