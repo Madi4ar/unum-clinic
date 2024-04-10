@@ -54,11 +54,17 @@
 .w-full {
   width: 100%;
 }
+.text-animation .mt-1 {
+  margin-top: 5px;
+}
+.mt-5 {
+  margin-top: 10px;
+}
 .h-full {
   height: 100%;
 }
 .ml-5 {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .ml-8 {
   margin-left: 30px;
@@ -100,6 +106,9 @@
 }
 .thank-you-message {
   width: 440px;
+}
+.sendButton {
+  margin-bottom: 10px;
 }
 .popup_in {
   background: #e5e5e5;

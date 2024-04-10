@@ -132,6 +132,7 @@ imagesAnimate.forEach((element) => {
         timer = 0;
         clearInterval(interval);
         document.querySelector(".resendButton").style.display = "flex";
+        document.querySelector(".sendButton").style.display = "none";
       }
     }, 1000);
   }
@@ -182,23 +183,20 @@ imagesAnimate.forEach((element) => {
   );
   const thankYouBlock = document.querySelector(".message-thank");
 
+  const sendButton = document.querySelector(".sendButton");
+
+  sendButton.addEventListener("click", function () {
+    if (checkInputsFilled()) {
+      thankYouBlock.style.display = "flex";
+      document.querySelector(".code-verified").style.display = "none";
+    } else {
+      // Здесь можете добавить код, который должен выполниться, если input не заполнены
+    }
+  });
+
   function checkInputsFilled() {
     return Array.from(inputs).every((input) => input.value.trim() !== "");
   }
-
-  function handleEnterKeyPress(event) {
-    if (event.key === "Enter") {
-      if (checkInputsFilled()) {
-        thankYouBlock.style.display = "flex";
-        document.querySelector(".code-verified").style.display = "none";
-      } else {
-      }
-    }
-  }
-
-  inputs.forEach((input) => {
-    input.addEventListener("keypress", handleEnterKeyPress);
-  });
 
   document.querySelector(".mobile-menu").onclick = function () {
     let menu = document.querySelector(".menu");
