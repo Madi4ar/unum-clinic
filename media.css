@@ -1946,6 +1946,18 @@
     left:30%;
     transform: none;
   }
+  .image-animation {
+    max-height: 78px;
+  }
+  .active-animation {
+    -webkit-transition: max-height 1s; 
+    -moz-transition: max-height 1s; 
+    -ms-transition: max-height 1s; 
+    -o-transition: max-height 1s; 
+    transition: max-height 1s;
+    overflow: hidden;
+    max-height: 302px;  
+  }
 }
 @media screen and (max-width: 375px) {
   .video-main {
