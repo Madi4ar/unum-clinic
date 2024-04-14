@@ -1875,6 +1875,10 @@
   }
   .hidden-button {
     display: flex;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .line-animation:last-child {
     display: none;
