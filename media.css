@@ -1961,6 +1961,80 @@
 }
 @media screen and (max-width: 375px) {
   .video-main {
-    height: 150vh;
+    height: 150dvh;
+  }
+  .numberic {
+    width: 100%;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .banner-text img{
+    display: none;
+  }
+  .text-animation .numberic {
+    margin-left: 0;
+  }
+  .text-animation .num {
+    width: 68px;
+  }
+  .numberic p {
+    width: 100%;
+  }
+  .client h2 {
+    width: 100%;
+  }
+  .banner-desc h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .info-block-child{
+    width: 100%;
+  }
+  .expert {
+    width: 100%;
+  }
+  .our-mission-text a {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .numberic p {
+    width: 70%;
+  }
+  .client h2 {
+    width: 60%;
+    word-break: break-all;
+    font-size: 20px;
+  }
+  .hidden-button {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .block8 .animate-link {
+    text-align: center;
+  }
+  .footer-logo {
+    width: 50%;
+  }
+  .footer-info .text-white {
+    font-size: 18px;
+    padding-top: 50px;
+  }
+  .info-email a:last-child {
+    font-size: 18px;
+  }
+  .preloader p {
+    width: 90%;
+  }
+  .our-mission-text p {
+    font-size: 18px;
+  }
+}
+
+

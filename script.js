@@ -19,6 +19,19 @@ if ($.cookie("visit6") == undefined) {
   $.cookie("visit6", true, cookieOptions);
 }
 
+function adjustVideoMainHeight() {
+  var bannerHeight = $('.banner-bot').outerHeight();
+  var desiredHeight = bannerHeight + 100; // добавляем отступ в 20 пикселей
+  $('.video-main').height(desiredHeight);
+}
+
+// Вызываем функцию при загрузке страницы и изменении размера окна
+$(window).on('load resize', adjustVideoMainHeight);
+
+
+
+
+
 const imagesAnimate = document.querySelectorAll(".image-animation");
 
 imagesAnimate.forEach((element) => {
