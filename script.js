@@ -191,7 +191,7 @@ imagesAnimate.forEach((element) => {
   }
 
   const inputs = document.querySelectorAll(
-    '.code-verified input[type="number"]'
+    '.code-verified input[type="text"]'
   );
   const thankYouBlock = document.querySelector(".message-thank");
 

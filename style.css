@@ -136,7 +136,7 @@
 .popup_in input[type="email"]:focus {
   border-color: #538eff;
 }
-.popup_in input[type="number"] {
+.popup_in input[type="text"] {
   width: 60px;
   height: 60px;
   font-size: 28px;
