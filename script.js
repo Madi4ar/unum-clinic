@@ -21,11 +21,10 @@ if ($.cookie("visit6") == undefined) {
 
 function adjustVideoMainHeight() {
   var bannerHeight = $('.banner-bot').outerHeight();
-  var desiredHeight = bannerHeight + 100; // добавляем отступ в 20 пикселей
+  var desiredHeight = bannerHeight + 100; 
   $('.video-main').height(desiredHeight);
 }
 
-// Вызываем функцию при загрузке страницы и изменении размера окна
 $(window).on('load resize', adjustVideoMainHeight);
 
 
@@ -205,6 +204,15 @@ imagesAnimate.forEach((element) => {
     } else {
       // Здесь можете добавить код, который должен выполниться, если input не заполнены
     }
+  });
+
+
+  inputs.forEach((input, index) => {
+    input.addEventListener("input", function () {
+      if (input.value.length === 1 && index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      }
+    });
   });
 
   function checkInputsFilled() {
